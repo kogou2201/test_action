@@ -9,15 +9,15 @@ jobs:
 
         steps:
         - name: 代码同步
-            users: actions/checkout@v4
+          uses: actions/checkout@v4
 
         - name: 环境信息
-            run: |
+          run: |
                 pwd
                 ls
 
         - name: 编译
-            run: |
-                cmake .
-                make
+          run: |
+            cmake .
+            make
     
