@@ -5,7 +5,7 @@ on: push
 jobs:
     cplus_build:
         name: C++编译
-        runs-on: ubuntu-lastest
+        runs-on: ubuntu-latest
 
         steps:
         - name: 代码同步
