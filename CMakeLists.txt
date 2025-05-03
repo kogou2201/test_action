@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.10)
 
 set(TEST_TARGET test)
 project(${TEST_TARGET})
@@ -12,4 +12,4 @@ set(CMAKE_CXX_FLAGS_DEBUG  "-g")
 
 aux_source_directory(. TEST_SRCS)
 
-add_executable(${TEST_TARGET} ${TEST_SRCS})?
+add_executable(${TEST_TARGET} ${TEST_SRCS})
