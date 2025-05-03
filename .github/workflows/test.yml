@@ -1,0 +1,23 @@
+name: 测试 Workflow Action
+
+on: push
+
+jobs:
+    cplus_build:
+        name: C++编译
+        runs-on: ubuntu-lastest
+
+        steps:
+        - name: 代码同步
+            users: actions/checkout@v4
+
+        - name: 环境信息
+            run: |
+                pwd
+                ls
+
+        - name: 编译
+            run: |
+                cmake .
+                make
+    
