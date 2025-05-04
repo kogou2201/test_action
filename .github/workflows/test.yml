@@ -18,8 +18,8 @@ jobs:
 
         - name: 编译
           run: |
-            cmake .
-            make
+            ./build.sh
+            
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4
           with:
