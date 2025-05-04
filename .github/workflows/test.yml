@@ -1,7 +1,9 @@
 name: 测试 Workflow Action
 
 on: push
-
+permissions:
+  contents: write
+  
 jobs:
     cplus_build:
         name: C++编译
@@ -19,7 +21,7 @@ jobs:
         - name: 编译
           run: |
             ./build.sh
-            
+
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@v4
           with:
